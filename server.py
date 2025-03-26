@@ -11,6 +11,8 @@ from wtforms.validators import InputRequired, Email, Length
 # zrihtaj https
 # izklopi debug
 # ######
+#!!!! slike samo naložiš v static/img folder carousel naloada vse
+
 class ContactForm(FlaskForm):
     name = StringField('Full Name', validators=[InputRequired()])
     email = EmailField('Email Address', validators=[InputRequired(), Email(message="Invalid email")])
@@ -23,7 +25,7 @@ class ContactForm(FlaskForm):
 
 
 load_dotenv()
-#### vneses svoje podatke naredi .env file v root dir
+#### vneses svoje podatke naredi .env file
 password = os.getenv("PASS")
 gmail = os.getenv("GMAIL")
 secret_key = os.getenv("SECRET_KEY")
@@ -40,7 +42,7 @@ def send_email(name,email,phone,message):
             from_addr=gmail,
             to_addrs=gmail,
             msg=(
-            f"Subject: New Contact Form Submission\n\n"  # Email subject
+            f"Subject: New Contact Form Submission\n\n"  
             f"Name: {name}\n"
             f"Email: {email}\n"
             f"Phone: {phone}\n"
