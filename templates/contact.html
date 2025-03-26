@@ -1,0 +1,133 @@
+{% include "header.html" %}
+
+<!-- Page Header-->
+<header
+  class="masthead"
+  style="background-image: url('../static/assets/img/contact-bg.jpg')"
+>
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="page-heading">
+          <h1>Contact us ! </h1>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Main Content-->
+<main class="mb-4">
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <p>
+         For painting inquiries or general information, feel free to reach out. Simply fill out the form below,
+            and we’ll get back to you as soon as possible!
+        </p>
+        <div class="my-5">
+          <!-- * * * * * * * * * * * * * * *-->
+          <!-- * * Simplified SB Contact Form for the Tutorial* *-->
+          <!-- TODO: add an "action" and a "method" to link this form to your main.py -->
+          {% with messages = get_flashed_messages(with_categories=true) %}
+              {% if messages %}
+                {% for category, message in messages %}
+                  <div class="alert alert-{{ category|lower }}">
+                    {{ message }}
+                  </div>
+                {% endfor %}
+                {% else %}
+
+            <form method="post" id="contactForm">
+              {{ form.hidden_tag() }}
+              <div class="form-floating">
+                  {{ form.name(class_="form-control", id="name", placeholder="") }}
+                  {{ form.name.label(class="form-label") }}
+                </div>
+              <div class="form-floating">
+                  {{ form.email(class_="form-control", id="email", placeholder="") }}
+                  {{ form.email.label(class="form-label") }}
+                </div>
+              <div class="form-floating">
+                  {{ form.phone(class_="form-control", id="phone", placeholder="") }}
+                  {{ form.phone.label(class="form-label") }}
+                </div>
+              <div class="form-floating">
+                  {{ form.message(class_="form-control", id="message",style="height: 12rem", placeholder="") }}
+                  {{ form.message.label(class="form-label") }}
+                </div>
+              <div style="padding-top: 20px;">
+                  {{ form.submit(class_="btn btn-primary text-uppercase", id="submit", placeholder="") }}
+                </div>
+
+            </form>
+              {% endif %}
+          {% endwith %}
+
+
+<!--          <form-->
+<!--            id="contactForm"-->
+<!--            name="sentMessage"-->
+<!--            action="{{ url_for('contact') }}"-->
+<!--            method="post"-->
+<!--          >-->
+<!--            <div class="form-floating">-->
+<!--              <input-->
+<!--                class="form-control"-->
+<!--                id="name"-->
+<!--                name="name"-->
+<!--                type="text"-->
+<!--                placeholder="Enter your name..."-->
+<!--                required-->
+<!--              />-->
+<!--              <label for="name">Name</label>-->
+<!--            </div>-->
+<!--            <div class="form-floating">-->
+<!--              <input-->
+<!--                class="form-control"-->
+<!--                id="email"-->
+<!--                name="email"-->
+<!--                type="email"-->
+<!--                placeholder="Enter your email..."-->
+<!--                required-->
+<!--              />-->
+<!--              <label for="email">Email address</label>-->
+<!--            </div>-->
+<!--            <div class="form-floating">-->
+<!--              <input-->
+<!--                class="form-control"-->
+<!--                id="phone"-->
+<!--                name="phone"-->
+<!--                type="tel"-->
+<!--                placeholder="Enter your phone number..."-->
+<!--                required-->
+<!--              />-->
+<!--              <label for="phone">Phone Number</label>-->
+<!--            </div>-->
+<!--            <div class="form-floating">-->
+<!--              <textarea-->
+<!--                class="form-control"-->
+<!--                id="message"-->
+<!--                name="message"-->
+<!--                placeholder="Enter your message here..."-->
+<!--                required-->
+<!--                style="height: 12rem"-->
+<!--              ></textarea>-->
+<!--              <label for="message">Message</label>-->
+<!--            </div>-->
+<!--            <br />-->
+<!--            <button-->
+<!--              class="btn btn-primary text-uppercase"-->
+<!--              id="submitButton"-->
+<!--              type="submit"-->
+<!--            >-->
+<!--              Send-->
+<!--            </button>-->
+<!--          </form>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% include "footer.html" %}
