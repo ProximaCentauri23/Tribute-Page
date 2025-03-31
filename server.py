@@ -107,7 +107,7 @@ def debug_lang():
 def home(lang_code):
     img_folder = os.path.join(app.static_folder, "img")
     images = [f for f in os.listdir(img_folder) if f.lower().endswith((".png", ".jpg", ".jpeg", ".webp", ".gif"))]
-    return render_template("index.html", images=images)
+    return render_template("index.html", lang_code=lang_code, images=images)
 
 @app.route("/<lang_code>/about")
 def about(lang_code):
@@ -128,6 +128,9 @@ def contact(lang_code):
         return redirect(url_for("contact"))
     return render_template("contact.html", form=form)
 
+@app.route("/<lang_code>/gallery")
+def gallery(lang_code):
+    return render_template("galery.html")
 
 
 
