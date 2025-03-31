@@ -1,0 +1,62 @@
+# Italian translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-03-31 16:29+0200\n"
+"PO-Revision-Date: 2025-03-31 16:24+0200\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: it\n"
+"Language-Team: it <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: templates/about.html:12
+msgid "Biography"
+msgstr "Biografia"
+
+#: templates/contact.html:12
+msgid "Contact us !"
+msgstr "Contattaci!"
+
+#: templates/contact.html:25
+msgid ""
+"For painting inquiries or general information, feel free to reach out. "
+"Simply fill out the form below,\n"
+"            and we’ll get back to you as soon as possible!"
+msgstr ""
+"Per richieste riguardanti i quadri o per informazioni generali, non "
+"esitare a contattarci. Compila semplicemente il modulo qui sotto,\n"
+"            e ti risponderemo al più presto!"
+
+#: templates/footer.html:6
+msgid "In memory of Andraž Šalamun."
+msgstr "In memoria di Andraž Šalamun."
+
+#: templates/header.html:26
+msgid "Online Galery"
+msgstr "Galleria Online"
+
+#: templates/header.html:33
+msgid "Home"
+msgstr "Home"
+
+#: templates/header.html:34
+msgid "About"
+msgstr "Biografia"
+
+#: templates/header.html:36
+msgid "Contact"
+msgstr "Contatti"
+
+#: templates/header.html:40
+msgid "Language"
+msgstr "Lingua"
+

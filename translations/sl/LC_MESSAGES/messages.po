@@ -1,0 +1,64 @@
+# Slovenian translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-03-31 16:29+0200\n"
+"PO-Revision-Date: 2025-03-29 11:11+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: sl\n"
+"Language-Team: sl <LL@li.org>\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 "
+"|| n%100==4 ? 2 : 3);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: templates/about.html:12
+msgid "Biography"
+msgstr "Bijografija"
+
+#: templates/contact.html:12
+msgid "Contact us !"
+msgstr "Kontaktirajte nas !"
+
+#: templates/contact.html:25
+msgid ""
+"For painting inquiries or general information, feel free to reach out. "
+"Simply fill out the form below,\n"
+"            and we’ll get back to you as soon as possible!"
+msgstr ""
+"Za povpraševanja v zvezi s slikami ali splošne informacije nas lahko "
+"kadarkoli kontaktirate. \n"
+"Preprosto izpolnite spodnji obrazec in odgovorili vam bomo v najkrajšem "
+"možnem času."
+
+#: templates/footer.html:6
+msgid "In memory of Andraž Šalamun."
+msgstr "V spomin Andražu Šalamunu."
+
+#: templates/header.html:26
+msgid "Online Galery"
+msgstr "Spletna galerija"
+
+#: templates/header.html:33
+msgid "Home"
+msgstr "Domov"
+
+#: templates/header.html:34
+msgid "About"
+msgstr "O Avtorju"
+
+#: templates/header.html:36
+msgid "Contact"
+msgstr "Kontakt"
+
+#: templates/header.html:40
+msgid "Language"
+msgstr "Jezik"
+

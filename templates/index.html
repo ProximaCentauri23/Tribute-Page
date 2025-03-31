@@ -1,4 +1,4 @@
-{% include "header.html" %}
+{% include 'header.html' with context %}
 <main class="flex-fill">
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
 
@@ -8,10 +8,6 @@
         <img src="{{ url_for('static', filename='img/' ~ image) }}" alt="Slide {{ loop.index }}"  width="100%"  >
       </div>
       {% endfor %}
-
-<!--      <div class="carousel-item active">-->
-<!--        <img src="{{ url_for('static', filename='img/ai1.webp') }}" alt="AI crushing programmer"  width="100%" >-->
-<!--      </div>-->
 
     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -23,9 +19,10 @@
     </button>
     </div>
   </div>
+<div>
 
+  </div>
 
 </main>
 
-
-{% include "footer.html" %}
+{% include "footer.html" with context %}
